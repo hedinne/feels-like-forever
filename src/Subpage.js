@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-
-export default class Subpage extends Component {
+import AnimatedWrapper from './AnimatedWrapper';
+class SubpageComponent extends Component {
   render() {
     return (
       <div className="page">
         <h1>Subpage</h1>
-        <p>Hello from the Subpage </p>
+        <p>Hello from a sub page!</p>
       </div>
     );
   }
 }
+const Subpage = AnimatedWrapper(SubpageComponent);
+export default Subpage;
